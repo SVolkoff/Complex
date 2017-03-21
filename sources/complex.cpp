@@ -1,6 +1,6 @@
 #include "complex.hpp"
 
-complex_t::complex_t() : 
+complex_t::complex_t() 
 {
 	real=0;
 	imaginary=0;
