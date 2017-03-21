@@ -18,22 +18,21 @@ complex_t::complex_t(const complex_t&cpycmplx)
 	imaginary = cpycmplx.imaginary;
 }
 
-double complex_t::real_()
+double complex_t::real_()const
 {
 	return real;
 }
 
-double  complex_t::imaginary_()
+double  complex_t::imaginary_()const
 {
 	return imaginary;
 }
 
 bool complex_t::operator == (const complex_t& compl2) const
 {
-	bool f = 0;
-	if ((real == compl2.real) && (imaginary == compl2.imaginary))
-		f = 1;
-	return f;
+	
+	return (((real == compl2.real) && (imaginary == compl2.imaginary))!)
+
 }
 
 complex_t complex_t::operator = (const complex_t& compl2)
@@ -53,7 +52,7 @@ istream& operator >> (istream&cin, complex_t& compl1)
 	return cin;
 }
 
-ostream& operator << (ostream&cout, complex_t& compl1)
+ostream& operator << (ostream&cout,const complex_t& compl1)
 {
 	if (compl1.imaginary < 0)
 	{
