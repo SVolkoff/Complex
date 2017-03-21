@@ -10,17 +10,17 @@ private:
 public:
 	complex_t();
 	complex_t(double  rl, double  im);
-	complex_t(const complex_t&copy);
+	complex_t(const complex_t&cpycmplx);
 	double  real_();
 	double  imaginary_();
-	complex_t operator * (const complex_t& c2) const;
-	complex_t operator / (const complex_t& c2) const;
-	complex_t operator += (const complex_t& c2);
-	complex_t operator -= (const complex_t& c2);
-	complex_t operator *= (const complex_t& c2);
-	complex_t operator /= (const complex_t& c2);
-	complex_t operator = (const complex_t& result);
-	bool operator == (const complex_t& c2) const;
-	friend istream& operator >> (istream&cin, complex_t& result);
-	friend ostream& operator << (ostream&cout, complex_t& result);
+	complex_t operator * (const complex_t& compl2) const;
+	complex_t operator / (const complex_t& compl2) const;
+	complex_t operator += (const complex_t& compl2);
+	complex_t operator -= (const complex_t& compl2);
+	complex_t operator *= (const complex_t& compl2);
+	complex_t operator /= (const complex_t& compl2);
+	complex_t operator = (const complex_t&  compl2);
+	bool operator == (const complex_t&  compl2) const;
+	friend istream& operator >> (istream&cin, complex_t&  compl);
+	friend ostream& operator << (ostream&cout, complex_t&  compl);
 };
