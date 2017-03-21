@@ -31,7 +31,7 @@ double  complex_t::imaginary_()const
 bool complex_t::operator == (const complex_t& compl2) const
 {
 	
-	return((real == compl2.real) && (imaginary == compl2.imaginary))
+	return((real == compl2.real) && (imaginary == compl2.imaginary));
 		
 }
 
