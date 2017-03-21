@@ -43,24 +43,24 @@ complex_t complex_t::operator = (const complex_t& compl2)
 	return *this;
 }
 
-istream& operator >> (istream&cin, complex_t& compl)
+istream& operator >> (istream&cin, complex_t& compl1)
 {
 	cout << "enter real part" << endl;
-	cin >> compl.real;
+	cin >> compl1.real;
 	cout << "enter imaginary part" << endl;
-	cin >> compl.imaginary;
+	cin >> compl1.imaginary;
 	cout << endl;
 	return cin;
 }
 
-ostream& operator << (ostream&cout, complex_t& compl)
+ostream& operator << (ostream&cout, complex_t& compl1)
 {
-	if (compl.imaginary < 0)
+	if (compl1.imaginary < 0)
 	{
-		cout << compl.real << compl.imaginary << "i" << endl;
+		cout << compl1.real << compl1.imaginary << "i" << endl;
 	}
 	else
-		cout << compl.real << "+" << compl.imaginary << "i" << endl;
+		cout << compl1.real << "+" << compl1.imaginary << "i" << endl;
 	return cout;
 }
 
