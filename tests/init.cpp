@@ -1,4 +1,4 @@
-#include <complex_t.hpp>
+#include <complex.hpp>
 #include <catch.hpp>
 
 SCENARIO("default constructor") {
