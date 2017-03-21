@@ -11,8 +11,8 @@ public:
 	complex_t();
 	complex_t(double  rl, double  im);
 	complex_t(const complex_t&cpycmplx);
-	double  real_();
-	double  imaginary_();
+	double  real_()const;
+	double  imaginary_()const;
 	complex_t operator * (const complex_t& compl2) const;
 	complex_t operator / (const complex_t& compl2) const;
 	complex_t operator += (const complex_t& compl2);
