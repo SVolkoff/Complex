@@ -1,4 +1,5 @@
 # complex_t
+[![Build Status](https://travis-ci.org/SVolkoff/Complex.svg?branch=master)](https://travis-ci.org/SVolkoff/Complex)
 
 - [x] real
 - [x] imaginary
