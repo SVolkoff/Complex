@@ -12,10 +12,14 @@ SCENARIO("array init")
 	REQUIRE(v1.empty() == true);
 	array<int, 5> v3{1,5,7,23};
 	array<int, 5> v4(v3);
-	REQUIRE(v3[0]==v4[0]==1);
-	REQUIRE(v3[1]==v4[1]==5);
-	REQUIRE(v3[2]==v4[2]==7);
-	REQUIRE(v3[3]==v4[3]==23);
+	REQUIRE(v3[0]==v4[0]);
+	REQUIRE(v3[0]==1);
+	REQUIRE(v3[1]==v4[1]);
+	REQUIRE(v3[1]==5);
+	REQUIRE(v3[2]==v4[2]);
+	REQUIRE(v3[2]==7);
+	REQUIRE(v3[3]==v4[3]);
+	REQUIRE(v3[3]==23);
 }
 
 SCENARIO("array at, back, front, data, operator[]")
@@ -38,11 +42,11 @@ SCENARIO("array at, back, front, data, operator[]")
  {
 	array<int, 5> v3{1,5,7,23, 71};
 	array<int, 5> v4=v3;
-	REQUIRE(v3[0]==v4[0]==1);
-	REQUIRE(v3[1]==v4[1]==5);
-	REQUIRE(v3[2]==v4[2]==7);
-	REQUIRE(v3[3]==v4[3]==23);
-	REQUIRE(v3[4]==v4[4]==71)
+//	REQUIRE(v3[0]==v4[0]==1);
+//	REQUIRE(v3[1]==v4[1]==5);
+//	REQUIRE(v3[2]==v4[2]==7);
+//	REQUIRE(v3[3]==v4[3]==23);
+//	REQUIRE(v3[4]==v4[4]==71)
 	array<int, 5> v5={1,2,3,4,5};
 	v5.swap(v3);
 	REQUIRE(v3[0]==1);
