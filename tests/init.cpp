@@ -34,7 +34,7 @@ SCENARIO("array at, back, front, data, operator[]")
 	REQUIRE(v1[0] == 9);
 	REQUIRE(v1[1] == 12);
 }
- SCENARIO("operator=")
+ SCENARIO("operator=, swap")
  {
 	array<int, 5> v3{1,5,7,23, 71};
 	array<int, 5> v4=v3;
@@ -43,4 +43,16 @@ SCENARIO("array at, back, front, data, operator[]")
 	REQUIRE(v3[2]==v4[2]==7);
 	REQUIRE(v3[3]==v4[3]==23);
 	REQUIRE(v3[4]==v4[4]==71)
+	array<int, 5> v5={1,2,3,4,5};
+	v5.swap(v3);
+	REQUIRE(v3[0]==1);
+	REQUIRE(v3[1]==2);
+	REQUIRE(v3[2]==3);
+	REQUIRE(v3[3]==4);
+	REQUIRE(v3[4]==5);
+	REQUIRE(v5[0]==1);
+	REQUIRE(v5[1]==5);
+	REQUIRE(v5[2]==7);
+	REQUIRE(v5[3]==23);
+	REQUIRE(v5[4]==71);
  }
